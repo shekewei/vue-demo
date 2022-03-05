@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "skw",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.31"
+  }
 }
