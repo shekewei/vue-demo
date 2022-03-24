@@ -6,12 +6,14 @@
 
 <script>
 export default {
-  nmae: "home",
+  nmae: 'home',
   data() {
     return {
-      message: "Hello Vue",
+      message: 'Hello Vue',
     };
   },
+  mounted() {},
+  methods: {},
 };
 </script>
 

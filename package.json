@@ -4,16 +4,28 @@
   "description": "create a simple project of vue",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config ./config/webpack.dev.js",
-    "build": "webpack --config ./config/webpack.prod.js"
+    "start": "webpack serve --config ./config/webpack.common --env development",
+    "build": "webpack --config ./config/webpack.common --env production"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.4",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^10.2.4",
+    "copy-webpack-plugin": "^9.1.0",
+    "core-js": "^3.21.1",
+    "css-loader": "^6.7.1",
+    "eslint": "^7.32.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^8.5.0",
     "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
     "less-loader": "^10.2.0",
+    "postcss": "^8.4.12",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.4.3",
+    "regenerator-runtime": "^0.13.9",
     "style-loader": "^3.3.1",
     "vue": "^2.6.14",
     "vue-loader": "^15.9.8",
@@ -21,7 +33,9 @@
     "vue-template-compiler": "^2.6.14",
     "vuex": "^3.6.2",
     "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
   },
   "repository": {
     "type": "git",
